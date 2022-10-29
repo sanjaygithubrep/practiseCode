@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        Object.prototype.myAppData = "this is a sample project"
+        Object.prototype.myData = function(){
+            return "custom function"
+        }
+         String.prototype.otherData= "this is prop for string"
+        //  "Hello".otherData
+        let users={
+            getFullName:function(){
+                return this.name+" "+this.lastName
+            },
+            getAge:function(){
+                let age= new Date().getFullYear()-this.birth;
+                return age
+            }
+            }
+        let student = {
+            name:'Anil',
+            lastName:'Sidhu',
+            birth:2000,
+            //  getAge:users.getAge
+
+        }
+        let teacher = {
+            name:'Jaipal',
+            lastName:'Sharma',
+            birth:1980,
+        //  getAge:users.getAge
+
+        }
+        //  teacher.__proto__= users;
+          student.__proto__= users;
+        //   console.log(teacher.getAge())
+        //  console.log(student.getAge())
+    </script>
+    
+</body>
+</html>

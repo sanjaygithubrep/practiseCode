@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function multiplier(a) {
+
+var c = 4;
+
+return function (y) {
+
+    return a + c ;
+
+ };
+
+}
+
+var mul1 = multiplier(5);
+
+var mul2 = multiplier(10);
+
+console.log(mul1(2) * mul2(4));
+// fun A[x] {
+
+// x.member = "bar"; 
+
+//   console.log("in changeMember: " + x.member); 
+
+// } 
+
+// fun B[x] {
+
+// x = { member: "bar" }; 
+
+// console.log("in changeObject: " + x.member); 
+
+// } 
+
+// var x = { member: "foo" }; 
+
+// console.log("before changeObject: " + x.member); 
+
+// A[x]; 
+
+// console.log("after changeObject: " + x.member); 
+
+// console.log("before changeMember: " + x.member); 
+
+// B[x]; 
+
+// console.log("after changeMember: " + x.member);
+    </script>
+    
+</body>
+</html>
